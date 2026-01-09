@@ -4,8 +4,22 @@ menu = ["Nasi goreng", "mie ayam", "es teh"]
 harga = [20000, 15000, 50000]
 
 print("daftar menu:")
-print(f"1. {menu[0]} - Rp{harga[0]")
-print(f"1. {menu[1]} - Rp{harga[1]")
-print(f"1. {menu[2]} - Rp{harga[2]")
+print(f"1. {menu[0]} - Rp{harga[0]}")
+print(f"2. {menu[1]} - Rp{harga[1]}")
+print(f"3. {menu[2]} - Rp{harga[2]}")
 
-pilihan = int(input("pilihan menu (
+pilihan = int(input("pilihan menu (1/2/3): "))
+jumlah = int(input("berapa porsi? "))
+
+index = pilihan - 1
+total = harga[index] * jumlah
+
+if (total > 30000):
+    diskon = total * 0.1
+    total_akhir = total - diskon
+    print("selamat, anda dapat diskon", diskon, "%")
+else:
+    total_akhir = total
+    print("maaf, tidak ada diskon.")
+    
+print("total yang harus di bayar: Rp", total_akhir)
