@@ -1,0 +1,8 @@
+print("menghitung luas layang-layang")
+
+diagonal1 = int(input("masukan diagonal 1 :"))
+diagonal2 = int(input("masukan diagonal 2 :"))
+
+luas = 1/2 * diagonal1 * diagonal2
+print("hasilnya adalah", luas)
+
