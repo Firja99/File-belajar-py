@@ -1,0 +1,11 @@
+print("== PROGRAM KASIR KANTIN SMK ==")
+
+menu = ["Nasi goreng", "mie ayam", "es teh"]
+harga = [20000, 15000, 50000]
+
+print("daftar menu:")
+print(f"1. {menu[0]} - Rp{harga[0]")
+print(f"1. {menu[1]} - Rp{harga[1]")
+print(f"1. {menu[2]} - Rp{harga[2]")
+
+pilihan = int(input("pilihan menu (
